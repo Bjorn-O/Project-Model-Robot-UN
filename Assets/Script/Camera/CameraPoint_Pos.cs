@@ -16,6 +16,7 @@ public class CameraPoint_Pos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cameraPoint.transform.position = player1.transform.position + player2.transform.position / 2;
+        cameraPoint.transform.position = player1.transform.position + player2.transform.position;
+        cameraPoint.transform.position /= 2;
     }
 }
